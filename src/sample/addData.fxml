@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.AddDataController">
+   <children>
+      <VBox layoutY="-1.0" prefHeight="400.0" prefWidth="602.0">
+         <children>
+            <HBox prefHeight="109.0" prefWidth="602.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Data Adding Details" wrappingWidth="450.0">
+                     <font>
+                        <Font name="Bauhaus 93" size="48.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="42.0" prefWidth="602.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Name" textAlignment="CENTER" wrappingWidth="170.93674278259277">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="nameStr" alignment="CENTER" prefHeight="26.0" prefWidth="583.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="77.0" prefHeight="42.0" prefWidth="602.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Action" textAlignment="CENTER" wrappingWidth="170.93674278259277">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="actionStr" alignment="CENTER" prefHeight="26.0" prefWidth="583.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="120.0" prefHeight="42.0" prefWidth="602.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Importance" textAlignment="CENTER" wrappingWidth="170.93674278259277">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="importanceStr" alignment="CENTER" prefHeight="26.0" prefWidth="583.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="162.0" prefHeight="42.0" prefWidth="602.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Probability" textAlignment="CENTER" wrappingWidth="170.93674278259277">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="probabStr" alignment="CENTER" prefHeight="26.0" prefWidth="583.0">
+                     <font>
+                        <Font size="24.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="save" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onMouseClicked="#setSave" prefHeight="53.0" prefWidth="157.0" text="SAVE" textAlignment="CENTER">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
